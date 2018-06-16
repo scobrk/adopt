@@ -167,4 +167,29 @@ p2 {
   width: 60%;
 }
 
+firstbody {
+  background-color: #39373c;
+}
+
+firstbody > h1 {
+  grid-column: 12/17;
+  grid-row: 4/8;
+}
+
+firstbody > p {
+  grid-column: 12/16;
+  grid-row: 9/14;
+}
+
+firstbody > img {
+  grid-column: 3/8;
+  grid-row: 1/11;
+  width: auto;
+  height: 90vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  object-position: center;
+}
+
 /*# sourceMappingURL=style.css.map */
