@@ -65,17 +65,26 @@ a:hover {
 header > button {
   grid-column: 4;
   grid-row: 1;
-  background-image: url("img/searchicon.png");
+  background-image: url("img/search-icon-png-21.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-  height: 35px;
-  width: 35px;
-  min-width: 20px;
-  min-height: 20px;
+  height: 15px;
+  width: 15px;
   border: none;
   margin: auto;
   margin-left: 0;
+  background-color: transparent;
+  filter: invert(100%);
+  transition-duration: 600ms;
+  transition-delay: 50ms;
+  opacity: 0.6;
+}
+
+header > button:hover {
+  opacity: 1;
+  transition-duration: 600ms;
+  transition-delay: 50ms;
 }
 
 header > button span {

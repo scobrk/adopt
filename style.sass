@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:600|Nanum+Gothic|Roboto:300,400|Raleway')
 
+    
+// CSS Reset
+
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed, 
+// figure, figcaption, footer, header, hgroup, 
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video 
+// 	margin: 0
+// 	padding: 0
+// 	border: 0
+// 	font-size: 100%
+// 	font: inherit
+// 	vertical-align: baseline
+    
 $bgcolor: #39373c
 $mainfont: 'Encode Sans Semi Expanded', sans-serif
 $secondfont: 'Raleway', sans-serif
@@ -70,17 +93,25 @@ a:hover
 header > button
     grid-column: 4
     grid-row: 1
-    background-image: url("img/searchicon.png")
+    background-image: url("img/search-icon-png-21.png")
     background-repeat: no-repeat
     background-position: 50% 50%
     background-size: contain
-    height: 35px
-    width:35px
-    min-width: 20px
-    min-height: 20px
+    height: 15px
+    width:15px
     border: none
     margin: auto
     margin-left: 0
+    background-color: transparent
+    filter: invert(100%)
+    transition-duration: 600ms
+    transition-delay: 50ms
+    opacity: 0.6
+
+header > button:hover
+    opacity: 1
+    transition-duration: 600ms
+    transition-delay: 50ms
 
 header > button span 
     display: none
