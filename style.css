@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:600|Nanum+Gothic|Roboto:300,400");
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:600|Nanum+Gothic|Roboto:300,400|Raleway");
 header {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 15vw 3fr 7.5vw 7.5vw;
+  width: 100vw;
   background-color: #39373c;
-  padding-top: 20px;
-  margin: 0;
+  padding-top: 2%;
+  margin-bottom: -10px;
 }
 
 header > h2 {
@@ -20,8 +21,8 @@ header > h2 {
 }
 
 header > h3 {
-  grid-column: 3;
   margin: auto;
+  grid-column: 3;
   padding-top: 1%;
   position: relative;
   font-family: "Encode Sans Semi Expanded", sans-serif;
@@ -29,32 +30,54 @@ header > h3 {
   color: #ffffff;
   font-weight: 600;
   line-height: 7.5vh;
-  text-align: right;
+  border-bottom: 2px solid white;
 }
 
 header > ul {
   grid-column: 2/3;
   margin: auto;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  padding: 0 5%;
 }
 
 header ul > a {
+  padding-left: 30px;
   text-decoration: none;
   list-style-type: none;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 3%;
-  font-size: 1.2vw;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1vw;
+  font-weight: bold;
   color: #ffffff;
-  font-weight: lighter;
+  opacity: 0.6;
   line-height: 7.5vh;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  margin: auto;
+}
+
+a:hover {
+  opacity: 1;
   transition-duration: 300ms;
   transition-delay: 50ms;
 }
 
-a:hover {
-  color: #e2c395;
-  transition-duration: 300ms;
-  transition-delay: 50ms;
+header > button {
+  grid-column: 4;
+  grid-row: 1;
+  background-image: url("img/searchicon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  border: none;
+  margin: auto;
+  margin-left: 0;
+}
+
+header > button span {
+  display: none;
 }
 
 .wrapper {
@@ -115,7 +138,7 @@ h1 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.1vw;
   color: #ffffff;
   font-weight: 300;
@@ -124,7 +147,7 @@ p {
 }
 
 p2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.1vw;
   color: #e2c395;
   line-height: 3.5vh;
