@@ -100,6 +100,10 @@ header > button span {
   display: none;
 }
 
+header.isHidden {
+  transform: translateY(-100%);
+}
+
 .content-1 {
   display: grid;
   grid-template-rows: repeat(18, 1fr);
@@ -110,7 +114,7 @@ header > button span {
   min-width: 0;
 }
 
-headercontent {
+topsection {
   background-image: url("img/dogheader.jpg");
   background-color: #39373c;
   min-width: 100%;
@@ -123,7 +127,7 @@ headercontent {
   top: 75px;
 }
 
-headercontent > h1 {
+topsection > h1 {
   grid-column: 4/9;
   grid-row: 5/10;
   background-color: transparent;
@@ -132,7 +136,7 @@ headercontent > h1 {
   min-width: 0;
 }
 
-headercontent > p {
+topsection > p {
   grid-column: 4/8;
   grid-row: 10/13;
   background-color: transparent;
@@ -141,7 +145,7 @@ headercontent > p {
   min-width: 0;
 }
 
-headercontent > p2 {
+topsection > p2 {
   grid-column: 4/7;
   grid-row: 14;
   background-color: transparent;
@@ -150,7 +154,7 @@ headercontent > p2 {
   min-width: 0;
 }
 
-headercontent > p2:hover {
+topsection > p2:hover {
   cursor: pointer;
 }
 
