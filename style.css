@@ -188,7 +188,7 @@ adoptsection > animalcontainer > img {
 adoptsection > animalcontainer > img:hover {
   transform: scale(0.95);
   transition-duration: 300ms;
-  transition-delay: 50ms;
+  transition-delay: 25ms;
   opacity: 1;
   cursor: pointer;
 }
