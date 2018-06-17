@@ -31,12 +31,13 @@ $alternatecolor: #e2c395
 
 header
     display: grid
+    position: fixed
+    top: 0
     grid-template-columns: 15vw 3fr 7.5vw 7.5vw
     width: 100vw 
-    background-color: $bgcolor
+    background-color: transparent
     padding-top: 2%
     margin-bottom: -10px
-
 
 
 header > h2 
@@ -125,6 +126,7 @@ header > button span
 .wrapper
     background-image: url("img/dogheader.jpg")
     background-color: $bgcolor
+     
     min-width: 100%
     min-height: 100vh
     background-size: contain

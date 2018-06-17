@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:600|Nanum+Gothic|Roboto:300,400|Raleway");
 header {
   display: grid;
+  position: fixed;
+  top: 0;
   grid-template-columns: 15vw 3fr 7.5vw 7.5vw;
   width: 100vw;
-  background-color: #39373c;
+  background-color: transparent;
   padding-top: 2%;
   margin-bottom: -10px;
 }
