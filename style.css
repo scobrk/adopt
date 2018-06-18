@@ -15,14 +15,13 @@ header {
   transition-delay: 50ms;
 }
 
-body {
-  background-color: #39373c;
+.alternate {
+  opacity: 0;
+  background: red;
 }
 
-header .alternate {
-  top: -100px;
-  transition-duration: 600ms;
-  transition-delay: 50ms;
+body {
+  background-color: #39373c;
 }
 
 header > .menu-icon {
