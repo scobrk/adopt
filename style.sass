@@ -29,6 +29,7 @@ $secondfont: 'Raleway', sans-serif
 
 $alternatecolor: #e2c395
 
+
 header
     display: grid
     position: fixed
@@ -41,18 +42,43 @@ header
     margin-bottom: -10px
     z-index: 99
     background-color: $bgcolor
+    transition-duration: 600ms
+    transition-delay: 50ms
+
+body 
+    background-color: $bgcolor
+    
+header .alternate
+    top: -100px
+    transition-duration: 600ms
+    transition-delay: 50ms
 
 
-header > h2 
+header > .menu-icon
     grid-column: 1
     margin: auto
-    padding-top: 1%
     position: relative
-    font-family: $mainfont
-    font-size: 1.2vw
-    color: #ffffff
-    font-weight: 600
-    line-height: 7.5vh
+    background-size: contain
+    background-position: center
+    overflow: hidden
+    background-repeat: no-repeat
+    width: 20px
+    height: 20px
+    filter: invert(100%)
+    transition-duration: 600ms
+    transition-delay: 50ms
+    opacity: 0.6
+    cursor: pointer
+    border: none
+    outline: none
+
+.menu-icon:hover 
+    cursor: pointer
+    opacity: 1
+    transition-duration: 600ms
+    transition-delay: 50ms
+
+    
 
 header > h3 
     margin: auto
@@ -89,6 +115,24 @@ header ul > a
     transition-delay: 50ms
     margin: auto
 
+.hide-nav
+    height: 50px
+    width: 50px
+    background-image: url("/img/noun_1563948_cc.svg")
+    background-size: contain
+    background-position: center
+    overflow: hidden
+    background-repeat: no-repeat
+
+
+.header-alt
+  height: 100px
+  background-color: rgba(0,0,0, 0.8)
+  position: fixed
+  top: 200
+  width: 100%
+  transition: all 0.5s
+
 a:hover 
     opacity: 1
     transition-duration: 300ms
@@ -101,8 +145,8 @@ header > button
     background-repeat: no-repeat
     background-position: 50% 50%
     background-size: contain
-    height: 15px
-    width:15px
+    height: 20px
+    width:20px
     border: none
     margin: auto
     margin-left: 0
@@ -124,8 +168,7 @@ header > button:hover
 header > button span 
     display: none
 
-header.isHidden 
-    transform: translateY(-100%)
+
 
 
 .content-1
@@ -149,7 +192,7 @@ topsection
     overflow: hidden
     background-repeat: no-repeat
     position: relative
-    top: 75px
+    top: 95px
 
 topsection > h1
     grid-column: 4/9
@@ -207,11 +250,11 @@ adoptsection > animalcontainer > img
     opacity: 0.7
     transition-duration: 300ms
     transition-delay: 50ms
-    overflow: hidden
-    border-radius: 10%
+    z-index: 2
     
 adoptsection > animalcontainer > img:hover
-    transform: scale(.95)
+    transform: scale(0.95)    
+    z-index: 55555
     transition-duration: 300ms
     transition-delay: 25ms
     opacity: 1
