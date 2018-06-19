@@ -1,11 +1,16 @@
+// $(document).ready(function(){
+//   $("button").click(function(){
+//     $("header").toggle("slide");
+//   });
+// });
 
-window.onscroll = function changeClass(){
+$(document).ready(function () {
 
-var scrollPosY = window.pageYOffset | document.body.scrollTop;
-var navBar = document.getElementsByTagName('header');
+  $("header").hide();
+  $("header").show();
 
-if(scrollPosY > 100) {
-  navBar.className = ('alternate');
-} else if(scrollPosY <= 100) {
-this.navBar = navBar}
-}
+  $('button').click(function () {
+      $("header").toggle("fade", 300);
+  });
+
+});

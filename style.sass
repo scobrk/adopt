@@ -42,26 +42,24 @@ header
     margin-bottom: -10px
     z-index: 99
     background-color: $bgcolor
-    transition-duration: 600ms
-    transition-delay: 50ms
 
 .alternate
-    opacity: 0
-    background: red
+    top: -100px
 
 body 
     background-color: $bgcolor
 
-header > .menu-icon
-    grid-column: 1
-    margin: auto
-    position: relative
+.menu-icon
+    background-image: url("/img/menu.png")
+    background-color: transparent
+    padding: 1.5%
+    margin-left: 55px
+    margin-top: 50px
+    position: fixed
     background-size: contain
     background-position: center
     overflow: hidden
     background-repeat: no-repeat
-    width: 20px
-    height: 20px
     filter: invert(100%)
     transition-duration: 600ms
     transition-delay: 50ms
@@ -69,6 +67,13 @@ header > .menu-icon
     cursor: pointer
     border: none
     outline: none
+    z-index: 10000
+    background-position: 50% 50%
+
+
+
+button span 
+    display: none
 
 .menu-icon:hover 
     cursor: pointer
