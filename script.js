@@ -9,7 +9,7 @@ $(document).ready(function () {
   $("header").hide();
   $("header").show();
 
-  $('button').click(function () {
+  $('.menu-icon').click(function () {
       $("header").toggle("fade", 300);
   });
 
