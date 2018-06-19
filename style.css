@@ -6,11 +6,11 @@ header {
   grid-template-columns: 15vw 3fr 7.5vw 7.5vw;
   width: 100vw;
   height: 75px;
-  background-color: transparent;
   padding-top: 2%;
   margin-bottom: -10px;
   z-index: 99;
   background-color: #39373c;
+  box-shadow: 2px 2px 8px #333333;
 }
 
 .alternate {
