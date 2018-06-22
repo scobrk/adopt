@@ -33,6 +33,7 @@ popout > ul {
   padding: 0;
   float: left;
   position: relative;
+  font: "Encode Sans Semi Expanded", sans-serif;
 }
 
 popout ul > a {
@@ -96,7 +97,7 @@ popout > button span {
   }
 
   popout > ul > a {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 
   popout > button {
@@ -236,21 +237,26 @@ topsection > p2:hover {
 }
 
 @media screen and (max-width: 675px) {
+  topsection {
+    top: 75px;
+  }
+
   topsection > h1 {
-    grid-column: 4/11;
-    grid-row: 6/15;
+    grid-column: 4/15;
+    grid-row: 3/6;
     font-size: 18px;
+    line-height: 2rem;
   }
 
   topsection > p {
-    grid-column: 4/17;
-    grid-row: 14/18;
+    grid-column: 4/12;
+    grid-row: 6/10;
     font-size: 10px;
   }
 
   topsection > p2 {
-    grid-column: 4/13;
-    grid-row: 19;
+    grid-column: 4/12;
+    grid-row: 11;
     font-size: 10px;
   }
 }
