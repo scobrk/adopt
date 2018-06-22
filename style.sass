@@ -105,6 +105,25 @@ popout > button:hover
 popout > button span 
     display: none
 
+@media screen and (max-width: 675px)
+    popout
+        height: 75px
+        top: 15px
+        position: absolute
+        margin-left: 75px
+        margin-top: 12px
+    popout > ul 
+        flex-direction: row
+        padding: 0
+        width: 70vw
+    popout > ul > a 
+        font-size: 3.5vw
+    popout > button 
+        display: none
+    popout > h3 
+        display: none
+
+
 .alternate
     top: -100px
 
@@ -132,6 +151,13 @@ body
     outline: none
     z-index: 10000
     background-position: 50% 50%
+
+@media screen and (max-width: 675px)
+    .menu-icon
+        width: 70px
+        padding: 1.6%
+        display: block
+
 
 button span 
     display: none
@@ -216,6 +242,22 @@ topsection > p2
 topsection > p2:hover 
     cursor: pointer
 
+@media screen and (max-width: 675px)
+    topsection > h1 
+        grid-column: 4/11
+        grid-row: 6/15
+        font-size: 18px
+    topsection > p 
+        grid-column: 4/17
+        grid-row: 14/18
+        font-size: 10px 
+    topsection > p2 
+        grid-column: 4/13
+        grid-row: 19
+        font-size: 10px
+
+
+
 adoptsection
     background-color: $bgcolor
 
@@ -240,9 +282,10 @@ adoptsection > animalcontainer
 
 adoptsection > animalcontainer > img
     display: inline-flex
-    height: 90%
-    width: auto
+    width: 33%
+    height: auto
     margin: auto
+    overflow: hidden
     opacity: 0.7
     transition-duration: 300ms
     transition-delay: 50ms
@@ -258,17 +301,11 @@ adoptsection > animalcontainer > img:hover
     cursor: pointer
     box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.4)
 
-    
-
-
-
-
-
 
 
 h1 
     font-family: $mainfont
-    font-size: 3.2vw
+    font-size: 3.4vw
     color: #ffffff
     font-weight: 600
     line-height: 7.5vh
