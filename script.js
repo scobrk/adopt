@@ -10,7 +10,7 @@ $(document).ready(function () {
   $("header").show();
 
   $('.menu-icon').click(function () {
-      $("header").toggle("fade", 300);
+      $("popout").toggle("slide", 300);
   });
 
 });
